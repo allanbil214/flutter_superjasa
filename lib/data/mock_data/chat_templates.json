@@ -1,0 +1,13 @@
+{
+    "templates": [
+      {"id": 1, "division_id": null, "for_role": "customer", "label": "Tanya Harga", "content": "Halo, saya ingin menanyakan harga layanan ini. Bisa diinfokan?", "sort_order": 1, "is_active": true},
+      {"id": 2, "division_id": null, "for_role": "customer", "label": "Jadwal Servis", "content": "Halo, saya ingin menjadwalkan servis. Apakah ada slot tersedia?", "sort_order": 2, "is_active": true},
+      {"id": 3, "division_id": null, "for_role": "customer", "label": "Estimasi Waktu", "content": "Berapa lama estimasi pengerjaan untuk layanan ini?", "sort_order": 3, "is_active": true},
+      {"id": 4, "division_id": null, "for_role": "customer", "label": "Konfirmasi Alamat", "content": "Apakah bisa servis ke alamat saya? Saya berada di area ini.", "sort_order": 4, "is_active": true},
+      {"id": 5, "division_id": null, "for_role": "customer", "label": "Garansi Servis", "content": "Apakah ada garansi setelah servis selesai?", "sort_order": 5, "is_active": true},
+      {"id": 6, "division_id": 1, "for_role": "customer", "label": "Tanya Freon", "content": "Bagaimana cara tahu AC saya perlu isi freon?", "sort_order": 1, "is_active": true},
+      {"id": 7, "division_id": 1, "for_role": "customer", "label": "Merek AC", "content": "Apakah bisa servis semua merek AC?", "sort_order": 2, "is_active": true},
+      {"id": 8, "division_id": 2, "for_role": "customer", "label": "Cek Tipe HP", "content": "Apakah bisa servis untuk tipe HP saya?", "sort_order": 1, "is_active": true},
+      {"id": 9, "division_id": 2, "for_role": "customer", "label": "Data Aman?", "content": "Apakah data di HP saya aman saat servis?", "sort_order": 2, "is_active": true}
+    ]
+  }

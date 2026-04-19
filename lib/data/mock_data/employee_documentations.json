@@ -1,0 +1,64 @@
+{
+    "documentations": [
+      {
+        "id": 1,
+        "order_id": 1,
+        "employee_id": 9,
+        "title": "Kondisi AC Sebelum Dicuci",
+        "description": "Filter AC sangat kotor, penuh debu dan jamur. Evaporator kotor dan berlendir. Kondensasi kurang optimal.",
+        "stage": "before",
+        "created_at": "2026-04-02T09:20:00+07:00",
+        "media": []
+      },
+      {
+        "id": 2,
+        "order_id": 1,
+        "employee_id": 9,
+        "title": "Proses Cuci AC",
+        "description": "Pembersihan filter menggunakan air bertekanan. Semprot evaporator dengan cairan pembersih khusus AC. Bersihkan kondensor bagian luar.",
+        "stage": "during",
+        "created_at": "2026-04-02T10:00:00+07:00",
+        "media": []
+      },
+      {
+        "id": 3,
+        "order_id": 1,
+        "employee_id": 9,
+        "title": "Hasil Cuci AC",
+        "description": "AC sudah bersih. Filter sudah dipasang kembali. AC dinyalakan dan berjalan normal, dingin kembali. Temperatur turun dari 28°C ke 18°C dalam 10 menit.",
+        "stage": "after",
+        "created_at": "2026-04-02T10:45:00+07:00",
+        "media": []
+      },
+      {
+        "id": 4,
+        "order_id": 8,
+        "employee_id": 10,
+        "title": "Pengecekan Freon AC",
+        "description": "Tekanan freon sangat rendah, hanya 30 PSI (normal 70-80 PSI). Tidak ada kebocoran terlihat secara visual.",
+        "stage": "before",
+        "created_at": "2026-03-21T10:10:00+07:00",
+        "media": []
+      },
+      {
+        "id": 5,
+        "order_id": 8,
+        "employee_id": 10,
+        "title": "Pengisian Freon R32",
+        "description": "Isi freon R32 sebanyak 600 gram. Tekanan naik ke 75 PSI. AC sudah mulai dingin kembali.",
+        "stage": "during",
+        "created_at": "2026-03-21T10:45:00+07:00",
+        "media": []
+      },
+      {
+        "id": 6,
+        "order_id": 8,
+        "employee_id": 10,
+        "title": "Selesai Isi Freon",
+        "description": "Freon sudah terisi penuh. AC berjalan normal dan dingin. Suhu turun signifikan. Customer puas.",
+        "stage": "after",
+        "created_at": "2026-03-21T11:20:00+07:00",
+        "media": []
+      }
+    ]
+  }
