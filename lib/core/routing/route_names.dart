@@ -18,6 +18,7 @@ class RouteNames {
   static const String customerWriteReview = '/customer/write-review/:orderId';
   static const String customerNotifications = '/customer/notifications';
   static const String customerProfile = '/customer/profile';
+  static const String customerAddresses = '/customer/addresses';
   
   // ============================================================
   // ADMIN ROUTES
@@ -33,6 +34,7 @@ class RouteNames {
   static const String adminReports = '/admin/reports';
   static const String adminNotifications = '/admin/notifications';
   static const String adminProfile = '/admin/profile';
+  static const String adminSettings = '/admin/settings';
   
   // ============================================================
   // EMPLOYEE ROUTES
@@ -46,6 +48,7 @@ class RouteNames {
   static const String employeeChat = '/employee/chat/:roomId';
   static const String employeeNotifications = '/employee/notifications';
   static const String employeeProfile = '/employee/profile';
+  static const String employeeSettings = '/employee/settings';
   
   // ============================================================
   // SUPER ADMIN ROUTES
@@ -59,6 +62,8 @@ class RouteNames {
   static const String superAdminReports = '/super-admin/reports';
   static const String superAdminNotifications = '/super-admin/notifications';
   static const String superAdminProfile = '/super-admin/profile';
+  static const String superAdminAppSettings = '/super-admin/app-settings';
+  static const String superAdminUserManagement = '/super-admin/user-management';
   
   // Helper to replace path params
   static String customerDivisionDetailPath(int id) => '/customer/division/$id';
@@ -81,4 +86,8 @@ class RouteNames {
   static String superAdminDivisionDetailPath(int id) => '/super-admin/divisions/$id';
   static String superAdminUserDetailPath(int id) => '/super-admin/users/$id';
   static String superAdminOrderDetailPath(int id) => '/super-admin/orders/$id';
+
+  // Shared routes
+  static const String editProfile = '/edit-profile';
+  static const String helpCenter = '/help-center';
 }

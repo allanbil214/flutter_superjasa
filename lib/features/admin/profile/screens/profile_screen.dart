@@ -44,12 +44,21 @@ class AdminProfileScreen extends StatelessWidget {
             _buildMenuItem(
               icon: Icons.settings_outlined,
               title: 'Pengaturan',
-              onTap: () {},
+              onTap: () => context.push(RouteNames.adminSettings),
+            ),
+            _buildMenuItem(
+              icon: Icons.person_outline,
+              title: 'Edit Profil',
+              onTap: () {
+                context.push('/edit-profile');
+              },
             ),
             _buildMenuItem(
               icon: Icons.help_outline,
               title: 'Pusat Bantuan',
-              onTap: () {},
+              onTap: () {
+                context.push(RouteNames.helpCenter);
+              },
             ),
             _buildMenuItem(
               icon: Icons.info_outline,

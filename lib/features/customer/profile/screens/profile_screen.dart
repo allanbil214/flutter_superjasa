@@ -51,21 +51,19 @@ class _CustomerProfileScreenState extends State<CustomerProfileScreen> {
               icon: Icons.person_outline,
               title: 'Edit Profil',
               onTap: () {
-                // TODO: Navigate to edit profile
+                context.push('/edit-profile');
               },
             ),
             _buildMenuItem(
               icon: Icons.location_on_outlined,
               title: 'Alamat Tersimpan',
-              onTap: () {
-                // TODO: Navigate to addresses
-              },
+              onTap: () => context.push(RouteNames.customerAddresses),
             ),
             _buildMenuItem(
               icon: Icons.help_outline,
               title: 'Pusat Bantuan',
               onTap: () {
-                // TODO: Navigate to help
+                context.push(RouteNames.helpCenter);
               },
             ),
             _buildMenuItem(

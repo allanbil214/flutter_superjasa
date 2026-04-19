@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:go_router/go_router.dart';
+import 'package:jasafix_app/features/shared/profile/screens/edit_profile_screen.dart';
 import '../../providers/app_state.dart';
 import '../constants/app_config.dart';
 import 'route_names.dart';
@@ -7,6 +8,7 @@ import '../../data/models/user_model.dart';
 
 import '../../features/auth/screens/login_screen.dart';
 import '../../features/auth/screens/role_selector_screen.dart';
+import '../../features/shared/help/screens/help_center_screen.dart';
 
 import '../../features/customer/home/screens/home_screen.dart';
 import '../../features/customer/division/screens/division_detail_screen.dart';
@@ -20,6 +22,7 @@ import '../../features/customer/chat/screens/chat_screen.dart';
 import '../../features/customer/review/screens/write_review_screen.dart';
 import '../../features/customer/notifications/screens/notifications_screen.dart';
 import '../../features/customer/profile/screens/profile_screen.dart';
+import '../../features/customer/address/screens/saved_addresses_screen.dart';
 
 import '../../features/admin/dashboard/screens/dashboard_screen.dart';
 import '../../features/admin/orders/screens/orders_list_screen.dart';
@@ -34,6 +37,7 @@ import '../../features/admin/notifications/screens/notifications_screen.dart';
 import '../../features/admin/profile/screens/profile_screen.dart';
 
 import '../../features/employee/tasks/screens/tasks_list_screen.dart';
+import '../../features/employee/settings/screens/settings_screen.dart';
 import '../../features/employee/tasks/screens/task_detail_screen.dart';
 import '../../features/employee/documentation/screens/documentations_list_screen.dart';
 import '../../features/employee/documentation/screens/order_documentations_screen.dart';
@@ -42,6 +46,7 @@ import '../../features/employee/chat/screens/chat_rooms_list_screen.dart';
 import '../../features/employee/chat/screens/chat_screen.dart';
 import '../../features/employee/notifications/screens/notifications_screen.dart';
 import '../../features/employee/profile/screens/profile_screen.dart';
+import '../../features/admin/settings/screens/settings_screen.dart';
 
 import '../../features/super_admin/dashboard/screens/dashboard_screen.dart';
 import '../../features/super_admin/divisions/screens/divisions_list_screen.dart';
@@ -52,6 +57,8 @@ import '../../features/super_admin/orders/screens/order_detail_screen.dart';
 import '../../features/super_admin/finance/screens/reports_screen.dart';
 import '../../features/super_admin/notifications/screens/notifications_screen.dart';
 import '../../features/super_admin/profile/screens/profile_screen.dart';
+import '../../features/super_admin/settings/screens/app_settings_screen.dart';
+import '../../features/super_admin/users/screens/user_management_screen.dart';
 
 class AppRouter {
   static final GlobalKey<NavigatorState> _rootNavigatorKey = GlobalKey<NavigatorState>();
@@ -89,6 +96,17 @@ class AppRouter {
           path: RouteNames.roleSelector,
           name: 'roleSelector',
           builder: (context, state) => const RoleSelectorScreen(),
+        ),
+
+        GoRoute(
+          path: RouteNames.editProfile,
+          name: 'editProfile',
+          builder: (context, state) => const EditProfileScreen(),
+        ),
+        GoRoute(
+          path: RouteNames.helpCenter,
+          name: 'helpCenter',
+          builder: (context, state) => const HelpCenterScreen(),
         ),
         
         // ============================================================
@@ -216,6 +234,10 @@ class AppRouter {
         name: 'customerProfile',
         builder: (context, state) => const CustomerProfileScreen(),
       ),
+      GoRoute(
+        path: RouteNames.customerAddresses,
+        builder: (context, state) => const SavedAddressesScreen(),
+      ),
     ];
   }
   
@@ -291,6 +313,10 @@ class AppRouter {
         name: 'adminProfile',
         builder: (context, state) => const AdminProfileScreen(),
       ),
+      GoRoute(
+        path: RouteNames.adminSettings,
+        builder: (context, state) => const AdminSettingsScreen(),
+      ),
     ];
   }
   
@@ -356,6 +382,10 @@ class AppRouter {
         name: 'employeeProfile',
         builder: (context, state) => const EmployeeProfileScreen(),
       ),
+      GoRoute(
+        path: RouteNames.employeeSettings,
+        builder: (context, state) => const EmployeeSettingsScreen(),
+      ),
     ];
   }
   
@@ -417,6 +447,14 @@ class AppRouter {
         path: RouteNames.superAdminProfile,
         name: 'superAdminProfile',
         builder: (context, state) => const SuperAdminProfileScreen(),
+      ),
+      GoRoute(
+        path: RouteNames.superAdminAppSettings,
+        builder: (context, state) => const AppSettingsScreen(),
+      ),
+      GoRoute(
+        path: RouteNames.superAdminUserManagement,
+        builder: (context, state) => const UserManagementScreen(),
       ),
     ];
   }

@@ -76,6 +76,28 @@ class AppState extends ChangeNotifier {
     notifyListeners();
   }
 
+  void updateCurrentUser({
+    String? name,
+    String? phone,
+    String? address,
+    String? avatar,
+  }) {
+    if (_currentUser != null) {
+      _currentUser = UserModel(
+        id: _currentUser!.id,
+        name: name ?? _currentUser!.name,
+        email: _currentUser!.email,
+        phone: phone ?? _currentUser!.phone,
+        role: _currentUser!.role,
+        avatar: avatar ?? _currentUser!.avatar,
+        address: address ?? _currentUser!.address,
+        isActive: _currentUser!.isActive,
+        createdAt: _currentUser!.createdAt,
+      );
+      notifyListeners();
+    }
+  }
+
   void logout() {
     _currentUser = null;
     _currentRole = null;
