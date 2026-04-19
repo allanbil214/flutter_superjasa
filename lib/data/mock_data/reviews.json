@@ -32,6 +32,17 @@
         "comment": "Teknisi Guntur sangat profesional dan ramah. Printer saya yang bermasalah sekarang sudah normal lagi. Pengerjaan cepat dan rapi. Recommended! ⭐⭐⭐⭐⭐",
         "is_published": true,
         "created_at": "2026-04-06T14:00:00+07:00"
+      },
+      {
+        "id": 4,
+        "order_id": 19,
+        "customer_id": 23,
+        "employee_id": 10,
+        "division_id": 1,
+        "rating": 5,
+        "comment": "Teknisi Suparman sangat profesional. Cuci 3 AC selesai dalam 4 jam. AC jadi dingin dan bersih. Harga juga dikasih diskon. Terima kasih JasaFix! 👍",
+        "is_published": true,
+        "created_at": "2026-04-13T09:00:00+07:00"
       }
     ]
   }

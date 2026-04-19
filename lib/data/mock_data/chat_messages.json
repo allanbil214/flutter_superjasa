@@ -67,6 +67,45 @@
       {"id": 61, "room_id": 13, "sender_id": 6, "order_id": null, "type": "text", "content": "Halo kak Putri! Sepertinya ada masalah di pompa air atau selang. Bisa dijadwalkan untuk pengecekan", "attachment": null, "is_read": true, "created_at": "2026-03-15T15:30:00+07:00"},
       {"id": 62, "room_id": 13, "sender_id": 20, "order_id": 13, "type": "order_card", "content": null, "attachment": null, "is_read": true, "created_at": "2026-03-15T16:00:00+07:00"},
       {"id": 63, "room_id": 13, "sender_id": 20, "order_id": null, "type": "text", "content": "Kak maaf, saya mau cancel ordernya. Ternyata suami saya bisa betulin sendiri", "attachment": null, "is_read": true, "created_at": "2026-03-17T09:00:00+07:00"},
-      {"id": 64, "room_id": 13, "sender_id": 6, "order_id": null, "type": "text", "content": "Baik kak, tidak masalah. Order sudah saya cancel. Kalau ada masalah lagi bisa order kembali ya!", "attachment": null, "is_read": true, "created_at": "2026-03-17T10:00:00+07:00"}
-    ]
-  }
+      {"id": 64, "room_id": 13, "sender_id": 6, "order_id": null, "type": "text", "content": "Baik kak, tidak masalah. Order sudah saya cancel. Kalau ada masalah lagi bisa order kembali ya!", "attachment": null, "is_read": true, "created_at": "2026-03-17T10:00:00+07:00"},
+      {"id": 65, "room_id": 14, "sender_id": null, "order_id": null, "type": "bot", "content": "Halo kak Arif! 👋 Selamat datang di Servis AC JasaFix. Ada yang bisa kami bantu?", "attachment": null, "is_read": true, "created_at": "2026-04-15T08:00:00+07:00"},
+      
+
+      {"id": 66, "room_id": 14, "sender_id": 21, "order_id": null, "type": "text", "content": "Halo, AC saya ga dingin, mau minta dicek", "attachment": null, "is_read": true, "created_at": "2026-04-15T08:02:00+07:00"},
+      {"id": 67, "room_id": 14, "sender_id": 2, "order_id": null, "type": "text", "content": "Halo kak Arif, saya Agus admin Servis AC. Bisa dijelaskan detailnya? AC udah berapa lama?", "attachment": null, "is_read": true, "created_at": "2026-04-15T08:10:00+07:00"},
+      {"id": 68, "room_id": 14, "sender_id": 21, "order_id": null, "type": "text", "content": "Udah 2 tahunan kak, belom pernah diservis. Kayaknya freon abis", "attachment": null, "is_read": true, "created_at": "2026-04-15T08:12:00+07:00"},
+      {"id": 69, "room_id": 14, "sender_id": 2, "order_id": null, "type": "text", "content": "Baik kak, bisa saya jadwalkan untuk bongkar pasang sekalian cuci AC? Hari ini jam 1 siang ada slot", "attachment": null, "is_read": true, "created_at": "2026-04-15T08:20:00+07:00"},
+      {"id": 70, "room_id": 14, "sender_id": 21, "order_id": 14, "type": "order_card", "content": null, "attachment": null, "is_read": true, "created_at": "2026-04-15T08:25:00+07:00"},
+      {"id": 71, "room_id": 14, "sender_id": 21, "order_id": null, "type": "text", "content": "Ok kak, udah saya order. Nanti teknisi langsung datang ya?", "attachment": null, "is_read": true, "created_at": "2026-04-15T08:26:00+07:00"},
+      {"id": 72, "room_id": 14, "sender_id": 2, "order_id": null, "type": "text", "content": "Betul kak, teknisi Eko akan datang jam 1 siang. Pembayaran udah kami terima ya 👍", "attachment": null, "is_read": true, "created_at": "2026-04-15T08:45:00+07:00"},
+
+      {"id": 73, "room_id": 15, "sender_id": null, "order_id": null, "type": "bot", "content": "Halo kak Mega! 👋 Selamat datang di Servis AC JasaFix. Ada yang bisa kami bantu?", "attachment": null, "is_read": true, "created_at": "2026-04-13T15:00:00+07:00"},
+      {"id": 74, "room_id": 15, "sender_id": 22, "order_id": null, "type": "text", "content": "Halo, mau cuci AC 2 unit, bisa besok pagi?", "attachment": null, "is_read": true, "created_at": "2026-04-13T15:05:00+07:00"},
+      {"id": 75, "room_id": 15, "sender_id": 2, "order_id": null, "type": "text", "content": "Halo kak Mega! Bisa kak, besok jam 9 pagi slot tersedia. Total Rp 300.000 untuk 2 unit", "attachment": null, "is_read": true, "created_at": "2026-04-13T15:30:00+07:00"},
+      {"id": 76, "room_id": 15, "sender_id": 22, "order_id": 15, "type": "order_card", "content": null, "attachment": null, "is_read": true, "created_at": "2026-04-13T15:45:00+07:00"},
+      {"id": 77, "room_id": 15, "sender_id": 2, "order_id": null, "type": "text", "content": "Order diterima kak! Teknisi Suparman akan datang besok jam 9 ya", "attachment": null, "is_read": true, "created_at": "2026-04-13T16:15:00+07:00"},
+
+      {"id": 78, "room_id": 16, "sender_id": null, "order_id": null, "type": "bot", "content": "Halo kak Nadia! 👋 Selamat datang di Servis AC JasaFix. Ada yang bisa kami bantu?", "attachment": null, "is_read": true, "created_at": "2026-04-16T09:00:00+07:00"},
+      {"id": 79, "room_id": 16, "sender_id": 24, "order_id": null, "type": "text", "content": "Halo kak, saya mau pasang AC baru 2 unit. Masih ada slot?", "attachment": null, "is_read": true, "created_at": "2026-04-16T09:05:00+07:00"},
+      {"id": 80, "room_id": 16, "sender_id": 2, "order_id": null, "type": "text", "content": "Halo kak Nadia! Ada slot hari Jumat jam 10 pagi. AC-nya merk apa dan berapa PK?", "attachment": null, "is_read": true, "created_at": "2026-04-16T09:30:00+07:00"},
+      {"id": 81, "room_id": 16, "sender_id": 24, "order_id": null, "type": "text", "content": "Daikin 1 PK sama Panasonic 1/2 PK kak", "attachment": null, "is_read": true, "created_at": "2026-04-16T09:35:00+07:00"},
+      {"id": 82, "room_id": 16, "sender_id": 2, "order_id": null, "type": "text", "content": "Ok kak, bisa. Total estimasi Rp 1.000.000 untuk jasa instalasi 2 unit", "attachment": null, "is_read": true, "created_at": "2026-04-16T10:00:00+07:00"},
+      {"id": 83, "room_id": 16, "sender_id": 24, "order_id": 16, "type": "order_card", "content": null, "attachment": null, "is_read": true, "created_at": "2026-04-16T10:15:00+07:00"},
+      {"id": 84, "room_id": 16, "sender_id": 24, "order_id": null, "type": "text", "content": "Saya transfer DP dulu ya kak, sisanya nanti pas pemasangan", "attachment": null, "is_read": true, "created_at": "2026-04-16T10:20:00+07:00"},
+      {"id": 85, "room_id": 16, "sender_id": 2, "order_id": null, "type": "text", "content": "Baik kak, nanti setelah transfer konfirmasi ya. Saya assign teknisi setelah pembayaran diverifikasi 👍", "attachment": null, "is_read": true, "created_at": "2026-04-16T10:45:00+07:00"},
+
+      {"id": 86, "room_id": 17, "sender_id": null, "order_id": null, "type": "bot", "content": "Halo kak Fajar! 👋 Selamat datang di Servis AC JasaFix. Ada yang bisa kami bantu?", "attachment": null, "is_read": false, "created_at": "2026-04-16T14:00:00+07:00"},
+      {"id": 87, "room_id": 17, "sender_id": 25, "order_id": null, "type": "text", "content": "Halo, AC saya bocor air dari indoor, butuh perbaikan urgent!", "attachment": null, "is_read": false, "created_at": "2026-04-16T14:02:00+07:00"},
+      {"id": 88, "room_id": 17, "sender_id": null, "order_id": null, "type": "bot", "content": "AC bocor bisa disebabkan selang mampet atau evaporator kotor. Admin kami akan segera membalas untuk bantuan lebih lanjut! 💧", "attachment": null, "is_read": false, "created_at": "2026-04-16T14:02:05+07:00"},
+
+      {"id": 89, "room_id": 19, "sender_id": null, "order_id": null, "type": "bot", "content": "Halo kak Rian! 👋 Selamat datang di Servis AC JasaFix. Ada yang bisa kami bantu?", "attachment": null, "is_read": true, "created_at": "2026-04-11T14:00:00+07:00"},
+      {"id": 90, "room_id": 19, "sender_id": 23, "order_id": null, "type": "text", "content": "Halo, mau cuci AC 3 unit. Bisa dapat diskon?", "attachment": null, "is_read": true, "created_at": "2026-04-11T14:05:00+07:00"},
+      {"id": 91, "room_id": 19, "sender_id": 2, "order_id": null, "type": "text", "content": "Halo kak Rian! Bisa kak, untuk 3 unit bisa saya kasih harga Rp 450.000 (normalnya Rp 500.000)", "attachment": null, "is_read": true, "created_at": "2026-04-11T14:30:00+07:00"},
+      {"id": 92, "room_id": 19, "sender_id": 23, "order_id": null, "type": "text", "content": "Ok deal kak! Besok bisa?", "attachment": null, "is_read": true, "created_at": "2026-04-11T14:35:00+07:00"},
+      {"id": 93, "room_id": 19, "sender_id": 2, "order_id": null, "type": "text", "content": "Besok jam 9 pagi available kak. Teknisi Suparman yang akan datang", "attachment": null, "is_read": true, "created_at": "2026-04-11T14:45:00+07:00"},
+      {"id": 94, "room_id": 19, "sender_id": 23, "order_id": 19, "type": "order_card", "content": null, "attachment": null, "is_read": true, "created_at": "2026-04-11T15:00:00+07:00"},
+      {"id": 95, "room_id": 19, "sender_id": 10, "order_id": null, "type": "text", "content": "Halo kak Rian, saya Suparman teknisi AC. Saya sudah selesai cuci 3 unit AC-nya. Semua sudah bersih dan dingin 👍", "attachment": null, "is_read": true, "created_at": "2026-04-12T13:45:00+07:00"},
+      {"id": 96, "room_id": 19, "sender_id": 23, "order_id": null, "type": "text", "content": "Terima kasih kak Suparman! Kerjaannya rapi dan cepat. Nanti saya kasih rating ya!", "attachment": null, "is_read": true, "created_at": "2026-04-12T14:00:00+07:00"},
+      {"id": 97, "room_id": 19, "sender_id": 2, "order_id": null, "type": "text", "content": "Terima kasih kak Rian! Jangan lupa servis rutin tiap 3-4 bulan ya ❄️", "attachment": null, "is_read": true, "created_at": "2026-04-12T14:15:00+07:00"}
+          ]
+        }

@@ -33,6 +33,16 @@ import '../../features/admin/finance/screens/reports_screen.dart';
 import '../../features/admin/notifications/screens/notifications_screen.dart';
 import '../../features/admin/profile/screens/profile_screen.dart';
 
+import '../../features/employee/tasks/screens/tasks_list_screen.dart';
+import '../../features/employee/tasks/screens/task_detail_screen.dart';
+import '../../features/employee/documentation/screens/documentations_list_screen.dart';
+import '../../features/employee/documentation/screens/order_documentations_screen.dart';
+import '../../features/employee/documentation/screens/add_documentation_screen.dart';
+import '../../features/employee/chat/screens/chat_rooms_list_screen.dart';
+import '../../features/employee/chat/screens/chat_screen.dart';
+import '../../features/employee/notifications/screens/notifications_screen.dart';
+import '../../features/employee/profile/screens/profile_screen.dart';
+
 // Placeholder screens (will be created later)
 import '../../features/placeholders.dart';
 

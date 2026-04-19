@@ -33,65 +33,6 @@ class PlaceholderScreen extends StatelessWidget {
   }
 }
 
-// Employee Screens
-class EmployeeTasksListScreen extends StatelessWidget {
-  const EmployeeTasksListScreen({super.key});
-  @override
-  Widget build(BuildContext context) => const PlaceholderScreen(title: 'My Tasks');
-}
-
-class EmployeeTaskDetailScreen extends StatelessWidget {
-  final int orderId;
-  const EmployeeTaskDetailScreen({super.key, required this.orderId});
-  @override
-  Widget build(BuildContext context) => PlaceholderScreen(title: 'Task Detail #$orderId');
-}
-
-class EmployeeDocumentationsListScreen extends StatelessWidget {
-  const EmployeeDocumentationsListScreen({super.key});
-  @override
-  Widget build(BuildContext context) => const PlaceholderScreen(title: 'Documentations');
-}
-
-class OrderDocumentationsScreen extends StatelessWidget {
-  final int orderId;
-  const OrderDocumentationsScreen({super.key, required this.orderId});
-  @override
-  Widget build(BuildContext context) => PlaceholderScreen(title: 'Order Docs #$orderId');
-}
-
-class AddDocumentationScreen extends StatelessWidget {
-  final int orderId;
-  const AddDocumentationScreen({super.key, required this.orderId});
-  @override
-  Widget build(BuildContext context) => PlaceholderScreen(title: 'Add Documentation');
-}
-
-class EmployeeChatRoomsScreen extends StatelessWidget {
-  const EmployeeChatRoomsScreen({super.key});
-  @override
-  Widget build(BuildContext context) => const PlaceholderScreen(title: 'Chat Rooms');
-}
-
-class EmployeeChatScreen extends StatelessWidget {
-  final int roomId;
-  const EmployeeChatScreen({super.key, required this.roomId});
-  @override
-  Widget build(BuildContext context) => PlaceholderScreen(title: 'Chat Room #$roomId');
-}
-
-class EmployeeNotificationsScreen extends StatelessWidget {
-  const EmployeeNotificationsScreen({super.key});
-  @override
-  Widget build(BuildContext context) => const PlaceholderScreen(title: 'Notifications');
-}
-
-class EmployeeProfileScreen extends StatelessWidget {
-  const EmployeeProfileScreen({super.key});
-  @override
-  Widget build(BuildContext context) => const PlaceholderScreen(title: 'Profile');
-}
-
 // Super Admin Screens
 class SuperAdminDashboardScreen extends StatelessWidget {
   const SuperAdminDashboardScreen({super.key});

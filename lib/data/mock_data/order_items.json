@@ -12,6 +12,12 @@
       {"id": 10, "order_id": 10, "service_id": 24, "qty": 1, "price": 150000, "subtotal": 150000, "note": "Termasuk pasang 2 access point"},
       {"id": 11, "order_id": 11, "service_id": 28, "qty": 1, "price": 150000, "subtotal": 150000, "note": null},
       {"id": 12, "order_id": 12, "service_id": 16, "qty": 1, "price": 200000, "subtotal": 200000, "note": null},
-      {"id": 13, "order_id": 13, "service_id": 21, "qty": 1, "price": 200000, "subtotal": 200000, "note": null}
+      {"id": 13, "order_id": 13, "service_id": 21, "qty": 1, "price": 200000, "subtotal": 200000, "note": null},
+      {"id": 14, "order_id": 14, "service_id": 3, "qty": 1, "price": 350000, "subtotal": 350000, "note": "Bongkar pasang AC"},
+      {"id": 15, "order_id": 15, "service_id": 1, "qty": 2, "price": 150000, "subtotal": 300000, "note": "Cuci AC 2 unit"},
+      {"id": 16, "order_id": 16, "service_id": 4, "qty": 2, "price": 500000, "subtotal": 1000000, "note": "Instalasi AC baru 2 unit"},
+      {"id": 17, "order_id": 17, "service_id": 2, "qty": 1, "price": 200000, "subtotal": 200000, "note": null},
+      {"id": 18, "order_id": 18, "service_id": 5, "qty": 1, "price": 175000, "subtotal": 175000, "note": null},
+      {"id": 19, "order_id": 19, "service_id": 1, "qty": 3, "price": 150000, "subtotal": 450000, "note": "Cuci AC 3 unit"}
     ]
   }
