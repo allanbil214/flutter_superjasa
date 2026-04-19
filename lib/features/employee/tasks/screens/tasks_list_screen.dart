@@ -12,6 +12,7 @@ import '../../../../data/services/mock_data_service.dart';
 import '../../../../data/models/order_model.dart';
 import '../../../../data/models/service_model.dart';
 import '../../../../data/models/user_model.dart';
+import '../../../../data/models/chat_room_model.dart';
 import '../../../../core/routing/route_names.dart';
 import '../../scaffold/employee_scaffold.dart';
 
@@ -463,9 +464,7 @@ class _EmployeeTasksListScreenState extends State<EmployeeTasksListScreen> {
                     ),
                   const SizedBox(width: AppSpacing.sm),
                   OutlinedButton.icon(
-                    onPressed: () {
-                      // Navigate to chat
-                    },
+                    onPressed: () => _navigateToChat(task),
                     icon: const Icon(Icons.chat_bubble_outline, size: 18),
                     label: const Text('Chat'),
                     style: OutlinedButton.styleFrom(
@@ -482,6 +481,27 @@ class _EmployeeTasksListScreenState extends State<EmployeeTasksListScreen> {
         ),
       ),
     );
+  }
+
+  Future<void> _navigateToChat(TaskWithDetails task) async {
+    final dataService = MockDataService();
+    ChatRoomModel? chatRoom = await dataService.getChatRoom(
+      task.customer.id,
+      task.order.divisionId,
+    );
+
+    if (chatRoom != null && mounted) {
+      context.push(RouteNames.employeeChatPath(chatRoom.id));
+    } else {
+      final allRooms = await dataService.getChatRooms();
+      final divisionRoom = allRooms.firstWhere(
+        (r) => r.divisionId == task.order.divisionId,
+        orElse: () => allRooms.first,
+      );
+      if (mounted) {
+        context.push(RouteNames.employeeChatPath(divisionRoom.id));
+      }
+    }
   }
 
   Color _getStatusColor(OrderStatus status) {

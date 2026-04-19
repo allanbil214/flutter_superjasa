@@ -14,6 +14,7 @@ import '../../../../data/models/order_model.dart';
 import '../../../../data/models/service_model.dart';
 import '../../../../data/models/payment_model.dart';
 import '../../../../data/models/user_model.dart';
+import '../../../../data/models/chat_room_model.dart';
 import '../../../../core/routing/route_names.dart';
 
 class CustomerOrderDetailScreen extends StatefulWidget {
@@ -554,15 +555,27 @@ class _CustomerOrderDetailScreenState extends State<CustomerOrderDetailScreen> {
   }
 
   void _navigateToChat() async {
+    if (_order == null) return;
+
     final dataService = MockDataService();
     final appState = Provider.of<AppState>(context, listen: false);
-    final chatRoom = await dataService.getChatRoom(
+
+    ChatRoomModel? chatRoom = await dataService.getChatRoom(
       appState.currentUserId,
       _order!.divisionId,
     );
-    
-    if (chatRoom != null) {
+
+    if (chatRoom != null && mounted) {
       context.push(RouteNames.customerChatPath(chatRoom.id));
+    } else {
+      final allRooms = await dataService.getChatRooms();
+      final divisionRoom = allRooms.firstWhere(
+        (r) => r.divisionId == _order!.divisionId,
+        orElse: () => allRooms.first,
+      );
+      if (mounted) {
+        context.push(RouteNames.customerChatPath(divisionRoom.id));
+      }
     }
   }
 }

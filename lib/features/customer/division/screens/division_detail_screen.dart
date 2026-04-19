@@ -1,15 +1,17 @@
 import 'package:flutter/material.dart';
+import 'package:provider/provider.dart';
 import 'package:go_router/go_router.dart';
-import 'package:jasafix_app/data/models/user_model.dart';
 import '../../../../core/constants/app_colors.dart';
 import '../../../../core/constants/app_spacing.dart';
 import '../../../../core/constants/app_text_styles.dart';
 import '../../../../core/widgets/app_app_bar.dart';
 import '../../../../core/widgets/loading_indicator.dart';
 import '../../../../core/widgets/empty_state.dart';
+import '../../../../providers/app_state.dart';
 import '../../../../data/services/mock_data_service.dart';
 import '../../../../data/models/division_model.dart';
 import '../../../../data/models/service_model.dart';
+import '../../../../data/models/chat_room_model.dart';
 import '../../../../core/routing/route_names.dart';
 import '../widgets/service_list_item.dart';
 
@@ -206,19 +208,26 @@ class _CustomerDivisionDetailScreenState extends State<CustomerDivisionDetailScr
 
   void _navigateToChat(BuildContext context, ServiceModel service) async {
     final dataService = MockDataService();
-    final currentUser = (await dataService.getUsers())
-        .firstWhere((u) => u.role == UserRole.customer && u.isActive);
-    
-    // Find or create chat room
-    var chatRoom = await dataService.getChatRoom(currentUser.id, widget.divisionId);
-    
-    if (chatRoom != null) {
+    final appState = Provider.of<AppState>(context, listen: false);
+    final currentUser = appState.currentUser;
+
+    if (currentUser == null) return;
+
+    ChatRoomModel? chatRoom = await dataService.getChatRoom(
+      currentUser.id,
+      widget.divisionId,
+    );
+
+    if (chatRoom != null && mounted) {
       context.push(RouteNames.customerChatPath(chatRoom.id));
     } else {
-      // For prototype, just go to first available chat room
-      final chatRooms = await dataService.getChatRooms();
-      if (chatRooms.isNotEmpty) {
-        context.push(RouteNames.customerChatPath(chatRooms.first.id));
+      final allRooms = await dataService.getChatRooms();
+      final divisionRoom = allRooms.firstWhere(
+        (r) => r.divisionId == widget.divisionId,
+        orElse: () => allRooms.first,
+      );
+      if (mounted) {
+        context.push(RouteNames.customerChatPath(divisionRoom.id));
       }
     }
   }

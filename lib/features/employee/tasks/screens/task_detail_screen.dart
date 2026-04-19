@@ -11,6 +11,7 @@ import '../../../../data/services/mock_data_service.dart';
 import '../../../../data/models/order_model.dart';
 import '../../../../data/models/service_model.dart';
 import '../../../../data/models/user_model.dart';
+import '../../../../data/models/chat_room_model.dart';
 import '../../../../core/routing/route_names.dart';
 import '../../scaffold/employee_scaffold.dart';
 
@@ -407,14 +408,25 @@ class _EmployeeTaskDetailScreenState extends State<EmployeeTaskDetailScreen> {
   }
 
   void _navigateToChat() async {
+    if (_order == null || _customer == null) return;
+
     final dataService = MockDataService();
-    final chatRoom = await dataService.getChatRoom(
-      _order!.customerId,
+    ChatRoomModel? chatRoom = await dataService.getChatRoom(
+      _customer!.id,
       _order!.divisionId,
     );
-    
+
     if (chatRoom != null && mounted) {
       context.push(RouteNames.employeeChatPath(chatRoom.id));
+    } else {
+      final allRooms = await dataService.getChatRooms();
+      final divisionRoom = allRooms.firstWhere(
+        (r) => r.divisionId == _order!.divisionId,
+        orElse: () => allRooms.first,
+      );
+      if (mounted) {
+        context.push(RouteNames.employeeChatPath(divisionRoom.id));
+      }
     }
   }
 

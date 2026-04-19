@@ -43,8 +43,15 @@ import '../../features/employee/chat/screens/chat_screen.dart';
 import '../../features/employee/notifications/screens/notifications_screen.dart';
 import '../../features/employee/profile/screens/profile_screen.dart';
 
-// Placeholder screens (will be created later)
-import '../../features/placeholders.dart';
+import '../../features/super_admin/dashboard/screens/dashboard_screen.dart';
+import '../../features/super_admin/divisions/screens/divisions_list_screen.dart';
+import '../../features/super_admin/divisions/screens/division_detail_screen.dart';
+import '../../features/super_admin/users/screens/user_detail_screen.dart';
+import '../../features/super_admin/orders/screens/orders_list_screen.dart';
+import '../../features/super_admin/orders/screens/order_detail_screen.dart';
+import '../../features/super_admin/finance/screens/reports_screen.dart';
+import '../../features/super_admin/notifications/screens/notifications_screen.dart';
+import '../../features/super_admin/profile/screens/profile_screen.dart';
 
 class AppRouter {
   static final GlobalKey<NavigatorState> _rootNavigatorKey = GlobalKey<NavigatorState>();
