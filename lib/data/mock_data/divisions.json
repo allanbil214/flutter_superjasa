@@ -1,81 +1,48 @@
 {
-    "divisions": [
-      {
-        "id": 1,
-        "name": "Servis AC",
-        "slug": "servis-ac",
-        "description": "Layanan servis, perawatan, dan instalasi Air Conditioner semua merek dan tipe.",
-        "icon": null,
-        "is_active": true,
-        "admin_ids": [2],
-        "employee_ids": [9, 10],
-        "created_at": "2026-04-01T00:00:00+07:00"
-      },
-      {
-        "id": 2,
-        "name": "Servis HP",
-        "slug": "servis-hp",
-        "description": "Perbaikan smartphone dan tablet semua merek: Android, iPhone, dan lainnya.",
-        "icon": null,
-        "is_active": true,
-        "admin_ids": [3],
-        "employee_ids": [11, 12],
-        "created_at": "2026-04-01T00:00:00+07:00"
-      },
-      {
-        "id": 3,
-        "name": "Servis Elektronik",
-        "slug": "servis-elektronik",
-        "description": "Perbaikan perangkat elektronik rumah tangga: TV, kipas angin, radio, dan sejenisnya.",
-        "icon": null,
-        "is_active": true,
-        "admin_ids": [4],
-        "employee_ids": [13, 14],
-        "created_at": "2026-04-01T00:00:00+07:00"
-      },
-      {
-        "id": 4,
-        "name": "Servis Komputer",
-        "slug": "servis-komputer",
-        "description": "Perbaikan laptop, PC, dan perangkat komputer. Instalasi software dan troubleshooting.",
-        "icon": null,
-        "is_active": true,
-        "admin_ids": [5],
-        "employee_ids": [15, 16],
-        "created_at": "2026-04-01T00:00:00+07:00"
-      },
-      {
-        "id": 5,
-        "name": "Servis Mesin Cuci",
-        "slug": "servis-mesin-cuci",
-        "description": "Perbaikan dan perawatan mesin cuci semua tipe: top loading, front loading.",
-        "icon": null,
-        "is_active": true,
-        "admin_ids": [6],
-        "employee_ids": [17],
-        "created_at": "2026-04-01T00:00:00+07:00"
-      },
-      {
-        "id": 6,
-        "name": "Instalasi WiFi",
-        "slug": "instalasi-wifi",
-        "description": "Instalasi, konfigurasi, dan perbaikan jaringan WiFi rumahan maupun perkantoran.",
-        "icon": null,
-        "is_active": true,
-        "admin_ids": [7],
-        "employee_ids": [18],
-        "created_at": "2026-04-01T00:00:00+07:00"
-      },
-      {
-        "id": 7,
-        "name": "Servis Printer",
-        "slug": "servis-printer",
-        "description": "Perbaikan printer semua merek: inkjet, laser, dot matrix. Isi ulang tinta dan toner.",
-        "icon": null,
-        "is_active": true,
-        "admin_ids": [8],
-        "employee_ids": [19],
-        "created_at": "2026-04-01T00:00:00+07:00"
-      }
-    ]
-  }
+  "divisions": [
+    {
+      "id": 1,
+      "name": "MEP & Data IT",
+      "slug": "mep-data-it",
+      "description": "Instalasi dan perbaikan sistem mekanikal, elektrikal, plumbing, AC, CCTV, dan jaringan data.",
+      "icon": null,
+      "is_active": true,
+      "admin_ids": [2],
+      "employee_ids": [7, 8, 9],
+      "created_at": "2026-04-01T00:00:00+07:00"
+    },
+    {
+      "id": 2,
+      "name": "Civil Work",
+      "slug": "civil-work",
+      "description": "Perbaikan struktural: tembok retak, dak bocor, atap bocor, waterproofing, dan kanopi.",
+      "icon": null,
+      "is_active": true,
+      "admin_ids": [3],
+      "employee_ids": [10, 11],
+      "created_at": "2026-04-01T00:00:00+07:00"
+    },
+    {
+      "id": 3,
+      "name": "Civil Partition Work",
+      "slug": "civil-partition-work",
+      "description": "Pemasangan partisi gypsum, partisi kaca, plafon, pengecatan, dan perbaikan pintu.",
+      "icon": null,
+      "is_active": true,
+      "admin_ids": [4],
+      "employee_ids": [12, 13],
+      "created_at": "2026-04-01T00:00:00+07:00"
+    },
+    {
+      "id": 4,
+      "name": "Interior",
+      "slug": "interior",
+      "description": "Konsultasi desain interior, pengadaan furnitur, pemasangan wallpaper, dan vinyl lantai.",
+      "icon": null,
+      "is_active": true,
+      "admin_ids": [5],
+      "employee_ids": [14, 15],
+      "created_at": "2026-04-01T00:00:00+07:00"
+    }
+  ]
+}

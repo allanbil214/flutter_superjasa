@@ -364,9 +364,15 @@ class _SuperAdminDashboardScreenState extends State<SuperAdminDashboardScreen> {
                 overflow: TextOverflow.ellipsis,
               ),
               const SizedBox(height: 4),
-              Text(
-                '5 layanan',
-                style: AppTextStyles.caption,
+              FutureBuilder<int>(
+                future: MockDataService().getServicesByDivision(division.id).then((s) => s.length),
+                builder: (context, snapshot) {
+                  final count = snapshot.data ?? 0;
+                  return Text(
+                    '$count layanan',
+                    style: AppTextStyles.caption,
+                  );
+                },
               ),
             ],
           ),
@@ -477,10 +483,10 @@ class _SuperAdminDashboardScreenState extends State<SuperAdminDashboardScreen> {
 
   IconData _getDivisionIcon(int id) {
     switch (id) {
-      case 1: return Icons.ac_unit;
-      case 2: return Icons.phone_android;
-      case 3: return Icons.tv;
-      case 4: return Icons.computer;
+      case 1: return Icons.electrical_services;
+      case 2: return Icons.construction;
+      case 3: return Icons.grid_view;
+      case 4: return Icons.chair; 
       case 5: return Icons.local_laundry_service;
       case 6: return Icons.wifi;
       case 7: return Icons.print;
@@ -490,10 +496,10 @@ class _SuperAdminDashboardScreenState extends State<SuperAdminDashboardScreen> {
 
   Color _getDivisionColor(int id) {
     switch (id) {
-      case 1: return const Color(0xFF00BCD4);
-      case 2: return const Color(0xFF4CAF50);
+      case 1: return const Color(0xFF2196F3);
+      case 2: return const Color(0xFF795548);
       case 3: return const Color(0xFFFF9800);
-      case 4: return const Color(0xFF2196F3);
+      case 4: return const Color(0xFF9C27B0);
       case 5: return const Color(0xFF9C27B0);
       case 6: return const Color(0xFFF44336);
       case 7: return const Color(0xFF607D8B);

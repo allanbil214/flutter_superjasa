@@ -1,23 +1,17 @@
 {
-    "order_items": [
-      {"id": 1, "order_id": 1, "service_id": 1, "qty": 1, "price": 150000, "subtotal": 150000, "note": null},
-      {"id": 2, "order_id": 2, "service_id": 6, "qty": 1, "price": 300000, "subtotal": 300000, "note": null},
-      {"id": 3, "order_id": 3, "service_id": 11, "qty": 1, "price": 250000, "subtotal": 250000, "note": null},
-      {"id": 4, "order_id": 4, "service_id": 16, "qty": 1, "price": 200000, "subtotal": 200000, "note": null},
-      {"id": 5, "order_id": 5, "service_id": 21, "qty": 1, "price": 200000, "subtotal": 200000, "note": null},
-      {"id": 6, "order_id": 6, "service_id": 24, "qty": 1, "price": 150000, "subtotal": 150000, "note": null},
-      {"id": 7, "order_id": 7, "service_id": 28, "qty": 1, "price": 150000, "subtotal": 150000, "note": null},
-      {"id": 8, "order_id": 8, "service_id": 2, "qty": 1, "price": 200000, "subtotal": 200000, "note": null},
-      {"id": 9, "order_id": 9, "service_id": 6, "qty": 1, "price": 300000, "subtotal": 300000, "note": null},
-      {"id": 10, "order_id": 10, "service_id": 24, "qty": 1, "price": 150000, "subtotal": 150000, "note": "Termasuk pasang 2 access point"},
-      {"id": 11, "order_id": 11, "service_id": 28, "qty": 1, "price": 150000, "subtotal": 150000, "note": null},
-      {"id": 12, "order_id": 12, "service_id": 16, "qty": 1, "price": 200000, "subtotal": 200000, "note": null},
-      {"id": 13, "order_id": 13, "service_id": 21, "qty": 1, "price": 200000, "subtotal": 200000, "note": null},
-      {"id": 14, "order_id": 14, "service_id": 3, "qty": 1, "price": 350000, "subtotal": 350000, "note": "Bongkar pasang AC"},
-      {"id": 15, "order_id": 15, "service_id": 1, "qty": 2, "price": 150000, "subtotal": 300000, "note": "Cuci AC 2 unit"},
-      {"id": 16, "order_id": 16, "service_id": 4, "qty": 2, "price": 500000, "subtotal": 1000000, "note": "Instalasi AC baru 2 unit"},
-      {"id": 17, "order_id": 17, "service_id": 2, "qty": 1, "price": 200000, "subtotal": 200000, "note": null},
-      {"id": 18, "order_id": 18, "service_id": 5, "qty": 1, "price": 175000, "subtotal": 175000, "note": null},
-      {"id": 19, "order_id": 19, "service_id": 1, "qty": 3, "price": 150000, "subtotal": 450000, "note": "Cuci AC 3 unit"}
-    ]
-  }
+  "order_items": [
+    {"id": 1, "order_id": 1, "service_id": 4, "qty": 1, "price": 175000, "subtotal": 175000, "note": "Cuci AC 1 unit"},
+    {"id": 2, "order_id": 2, "service_id": 10, "qty": 2, "price": 350000, "subtotal": 700000, "note": "Pasang 2 kamera CCTV"},
+    {"id": 3, "order_id": 3, "service_id": 1, "qty": 4, "price": 150000, "subtotal": 600000, "note": "Ganti 4 titik lampu teras"},
+    {"id": 4, "order_id": 4, "service_id": 12, "qty": 1, "price": 200000, "subtotal": 200000, "note": "Perbaikan 2 titik retakan"},
+    {"id": 5, "order_id": 5, "service_id": 7, "qty": 1, "price": 200000, "subtotal": 200000, "note": "Perbaikan pipa dapur"},
+    {"id": 6, "order_id": 6, "service_id": 19, "qty": 20, "price": 200000, "subtotal": 4000000, "note": "Plafon ruang tamu ~20m2"},
+    {"id": 7, "order_id": 7, "service_id": 13, "qty": 1, "price": 300000, "subtotal": 300000, "note": "Waterproofing 2 titik bocor"},
+    {"id": 8, "order_id": 8, "service_id": 17, "qty": 12, "price": 250000, "subtotal": 3000000, "note": "Partisi gypsum ~12m2"},
+    {"id": 9, "order_id": 9, "service_id": 21, "qty": 1, "price": 175000, "subtotal": 175000, "note": "Perbaikan engsel pintu"},
+    {"id": 10, "order_id": 10, "service_id": 15, "qty": 6, "price": 500000, "subtotal": 3000000, "note": "Kanopi carport ~6m2"},
+    {"id": 11, "order_id": 11, "service_id": 24, "qty": 1, "price": 300000, "subtotal": 300000, "note": "Konsultasi desain interior"},
+    {"id": 12, "order_id": 12, "service_id": 5, "qty": 1, "price": 120000, "subtotal": 120000, "note": "Ganti kran wastafel"},
+    {"id": 13, "order_id": 13, "service_id": 4, "qty": 2, "price": 175000, "subtotal": 350000, "note": "Cuci AC 2 unit ruang tamu"}
+  ]
+}

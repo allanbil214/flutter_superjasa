@@ -3,8 +3,9 @@ import '../../../../core/constants/app_colors.dart';
 import '../../../../core/constants/app_spacing.dart';
 import '../../../../core/constants/app_text_styles.dart';
 import '../../../../data/models/division_model.dart';
+import '../../../../data/services/mock_data_service.dart';
 
-class DivisionCard extends StatelessWidget {
+class DivisionCard extends StatefulWidget {
   final DivisionModel division;
   final VoidCallback onTap;
 
@@ -15,10 +16,41 @@ class DivisionCard extends StatelessWidget {
   });
 
   @override
+  State<DivisionCard> createState() => _DivisionCardState();
+}
+
+class _DivisionCardState extends State<DivisionCard> {
+  int _serviceCount = 0;
+  bool _isLoading = true;
+
+  @override
+  void initState() {
+    super.initState();
+    _loadServiceCount();
+  }
+
+  Future<void> _loadServiceCount() async {
+    try {
+      final dataService = MockDataService();
+      final services = await dataService.getServicesByDivision(widget.division.id);
+      if (mounted) {
+        setState(() {
+          _serviceCount = services.length;
+          _isLoading = false;
+        });
+      }
+    } catch (e) {
+      if (mounted) {
+        setState(() => _isLoading = false);
+      }
+    }
+  }
+
+  @override
   Widget build(BuildContext context) {
     return Card(
       child: InkWell(
-        onTap: onTap,
+        onTap: widget.onTap,
         borderRadius: BorderRadius.circular(AppSpacing.cardBorderRadius),
         child: Padding(
           padding: const EdgeInsets.all(AppSpacing.md),
@@ -29,18 +61,18 @@ class DivisionCard extends StatelessWidget {
                 width: 56,
                 height: 56,
                 decoration: BoxDecoration(
-                  color: _getDivisionColor(division.id).withOpacity(0.1),
+                  color: _getDivisionColor(widget.division.id).withOpacity(0.1),
                   shape: BoxShape.circle,
                 ),
                 child: Icon(
-                  _getDivisionIcon(division.id),
+                  _getDivisionIcon(widget.division.id),
                   size: 28,
-                  color: _getDivisionColor(division.id),
+                  color: _getDivisionColor(widget.division.id),
                 ),
               ),
               const SizedBox(height: AppSpacing.sm),
               Text(
-                division.name,
+                widget.division.name,
                 style: AppTextStyles.titleSmall.copyWith(
                   fontWeight: FontWeight.w600,
                 ),
@@ -50,7 +82,7 @@ class DivisionCard extends StatelessWidget {
               ),
               const SizedBox(height: AppSpacing.xs),
               Text(
-                _getServiceCount(),
+                _isLoading ? '...' : '$_serviceCount Layanan',
                 style: AppTextStyles.caption,
               ),
             ],
@@ -62,10 +94,10 @@ class DivisionCard extends StatelessWidget {
 
   IconData _getDivisionIcon(int id) {
     switch (id) {
-      case 1: return Icons.ac_unit;
-      case 2: return Icons.phone_android;
-      case 3: return Icons.tv;
-      case 4: return Icons.computer;
+      case 1: return Icons.electrical_services;
+      case 2: return Icons.construction;
+      case 3: return Icons.grid_view;
+      case 4: return Icons.chair; 
       case 5: return Icons.local_laundry_service;
       case 6: return Icons.wifi;
       case 7: return Icons.print;
@@ -75,28 +107,14 @@ class DivisionCard extends StatelessWidget {
 
   Color _getDivisionColor(int id) {
     switch (id) {
-      case 1: return const Color(0xFF00BCD4);
-      case 2: return const Color(0xFF4CAF50);
+      case 1: return const Color(0xFF2196F3);
+      case 2: return const Color(0xFF795548);
       case 3: return const Color(0xFFFF9800);
-      case 4: return const Color(0xFF2196F3);
+      case 4: return const Color(0xFF9C27B0);
       case 5: return const Color(0xFF9C27B0);
       case 6: return const Color(0xFFF44336);
       case 7: return const Color(0xFF607D8B);
       default: return AppColors.primary;
-    }
-  }
-
-  String _getServiceCount() {
-    // Hardcoded for prototype
-    switch (division.id) {
-      case 1: return '5 Layanan';
-      case 2: return '5 Layanan';
-      case 3: return '5 Layanan';
-      case 4: return '5 Layanan';
-      case 5: return '3 Layanan';
-      case 6: return '4 Layanan';
-      case 7: return '4 Layanan';
-      default: return '0 Layanan';
     }
   }
 }

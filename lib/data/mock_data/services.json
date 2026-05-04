@@ -1,35 +1,31 @@
 {
-    "services": [
-      {"id": 1, "division_id": 1, "name": "Cuci AC", "description": "Pembersihan filter, evaporator, dan kondensor AC.", "base_price": 150000, "price_note": "Harga per unit, belum termasuk freon", "duration_est": "1-2 jam", "is_active": true},
-      {"id": 2, "division_id": 1, "name": "Isi Freon AC", "description": "Pengisian ulang freon AC R32 / R410A.", "base_price": 200000, "price_note": "Harga tergantung jenis dan jumlah freon", "duration_est": "30-60 menit", "is_active": true},
-      {"id": 3, "division_id": 1, "name": "Bongkar Pasang AC", "description": "Bongkar & pasang unit AC pindah lokasi.", "base_price": 350000, "price_note": "Belum termasuk pipa tambahan", "duration_est": "2-3 jam", "is_active": true},
-      {"id": 4, "division_id": 1, "name": "Instalasi AC Baru", "description": "Pemasangan unit AC baru beserta pipa dan instalasi listrik.", "base_price": 500000, "price_note": "Harga mulai dari, tergantung kondisi lokasi", "duration_est": "3-4 jam", "is_active": true},
-      {"id": 5, "division_id": 1, "name": "Perbaikan AC Bocor", "description": "Penanganan AC yang bocor/menetes air.", "base_price": 175000, "price_note": "Estimasi harga, bisa berubah sesuai kerusakan", "duration_est": "1-2 jam", "is_active": true},
-      {"id": 6, "division_id": 2, "name": "Ganti LCD/Layar", "description": "Penggantian layar HP yang retak atau mati.", "base_price": 300000, "price_note": "Harga tergantung tipe HP", "duration_est": "1-2 jam", "is_active": true},
-      {"id": 7, "division_id": 2, "name": "Ganti Baterai", "description": "Penggantian baterai HP yang sudah lemah.", "base_price": 150000, "price_note": "Harga tergantung tipe HP", "duration_est": "30-60 menit", "is_active": true},
-      {"id": 8, "division_id": 2, "name": "Servis Kamera HP", "description": "Perbaikan kamera depan/belakang yang rusak atau buram.", "base_price": 200000, "price_note": "Estimasi harga awal", "duration_est": "1-2 jam", "is_active": true},
-      {"id": 9, "division_id": 2, "name": "Flash/Install Ulang", "description": "Install ulang sistem operasi HP (flashing).", "base_price": 100000, "price_note": "Harga flat", "duration_est": "1-2 jam", "is_active": true},
-      {"id": 10, "division_id": 2, "name": "Servis Charging Port", "description": "Perbaikan port charger HP yang tidak berfungsi.", "base_price": 175000, "price_note": "Harga tergantung tipe HP", "duration_est": "1-2 jam", "is_active": true},
-      {"id": 11, "division_id": 3, "name": "Servis TV LED/LCD", "description": "Perbaikan TV LED/LCD semua merek.", "base_price": 250000, "price_note": "Harga estimasi, tergantung kerusakan", "duration_est": "1-3 jam", "is_active": true},
-      {"id": 12, "division_id": 3, "name": "Servis Kipas Angin", "description": "Perbaikan kipas angin meja, berdiri, maupun dinding.", "base_price": 75000, "price_note": "Harga flat untuk kerusakan umum", "duration_est": "30-60 menit", "is_active": true},
-      {"id": 13, "division_id": 3, "name": "Servis Radio/Speaker", "description": "Perbaikan radio, speaker aktif, dan amplifier.", "base_price": 125000, "price_note": "Harga estimasi", "duration_est": "1-2 jam", "is_active": true},
-      {"id": 14, "division_id": 3, "name": "Servis Setrika", "description": "Perbaikan setrika yang tidak panas atau bocor.", "base_price": 65000, "price_note": "Harga flat", "duration_est": "30 menit", "is_active": true},
-      {"id": 15, "division_id": 3, "name": "Servis Blender/Mixer", "description": "Perbaikan blender dan mixer dapur.", "base_price": 85000, "price_note": "Harga flat untuk kerusakan umum", "duration_est": "30-60 menit", "is_active": true},
-      {"id": 16, "division_id": 4, "name": "Servis Laptop", "description": "Perbaikan laptop: tidak menyala, hang, overheat, dll.", "base_price": 200000, "price_note": "Harga estimasi, tergantung kerusakan", "duration_est": "1-3 jam", "is_active": true},
-      {"id": 17, "division_id": 4, "name": "Install Ulang Windows", "description": "Install ulang Windows + driver + software dasar.", "base_price": 150000, "price_note": "Harga flat, belum termasuk lisensi Windows", "duration_est": "1-2 jam", "is_active": true},
-      {"id": 18, "division_id": 4, "name": "Upgrade RAM/SSD", "description": "Pemasangan RAM atau SSD baru pada laptop/PC.", "base_price": 100000, "price_note": "Biaya jasa saja, komponen tidak termasuk", "duration_est": "30-60 menit", "is_active": true},
-      {"id": 19, "division_id": 4, "name": "Bersih Laptop", "description": "Pembersihan kipas dan thermal paste laptop.", "base_price": 175000, "price_note": "Rekomendasi tiap 1-2 tahun", "duration_est": "1-2 jam", "is_active": true},
-      {"id": 20, "division_id": 4, "name": "Servis PC/Desktop", "description": "Perbaikan komputer desktop: hardware maupun software.", "base_price": 175000, "price_note": "Harga estimasi", "duration_est": "1-3 jam", "is_active": true},
-      {"id": 21, "division_id": 5, "name": "Servis Mesin Cuci", "description": "Perbaikan mesin cuci top loading dan front loading.", "base_price": 200000, "price_note": "Harga estimasi, tergantung kerusakan", "duration_est": "1-3 jam", "is_active": true},
-      {"id": 22, "division_id": 5, "name": "Bersih Mesin Cuci", "description": "Pembersihan tabung dan filter mesin cuci.", "base_price": 150000, "price_note": "Harga flat", "duration_est": "1-2 jam", "is_active": true},
-      {"id": 23, "division_id": 5, "name": "Ganti Selang Mesin Cuci", "description": "Penggantian selang air masuk/keluar mesin cuci.", "base_price": 125000, "price_note": "Harga jasa, selang tidak termasuk", "duration_est": "30-60 menit", "is_active": true},
-      {"id": 24, "division_id": 6, "name": "Instalasi WiFi Baru", "description": "Pemasangan router WiFi baru dan konfigurasi jaringan.", "base_price": 150000, "price_note": "Harga jasa, perangkat tidak termasuk", "duration_est": "1-2 jam", "is_active": true},
-      {"id": 25, "division_id": 6, "name": "Perbaikan Jaringan", "description": "Troubleshooting dan perbaikan koneksi internet/WiFi.", "base_price": 100000, "price_note": "Harga flat", "duration_est": "1-2 jam", "is_active": true},
-      {"id": 26, "division_id": 6, "name": "Pasang Kabel LAN", "description": "Instalasi kabel LAN untuk jaringan rumah/kantor.", "base_price": 200000, "price_note": "Harga per titik, tergantung panjang kabel", "duration_est": "2-4 jam", "is_active": true},
-      {"id": 27, "division_id": 6, "name": "Setting Router/Mikrotik", "description": "Konfigurasi ulang router, mikrotik, dan access point.", "base_price": 125000, "price_note": "Harga flat", "duration_est": "1-2 jam", "is_active": true},
-      {"id": 28, "division_id": 7, "name": "Servis Printer", "description": "Perbaikan printer inkjet dan laser semua merek.", "base_price": 150000, "price_note": "Harga estimasi, tergantung kerusakan", "duration_est": "1-2 jam", "is_active": true},
-      {"id": 29, "division_id": 7, "name": "Isi Ulang Tinta", "description": "Isi ulang tinta printer semua warna.", "base_price": 50000, "price_note": "Harga per warna", "duration_est": "15-30 menit", "is_active": true},
-      {"id": 30, "division_id": 7, "name": "Ganti Cartridge", "description": "Penggantian cartridge printer.", "base_price": 75000, "price_note": "Biaya jasa, cartridge tidak termasuk", "duration_est": "15-30 menit", "is_active": true},
-      {"id": 31, "division_id": 7, "name": "Servis Head Printer", "description": "Pembersihan dan perbaikan head printer yang buntu/bergaris.", "base_price": 100000, "price_note": "Harga flat", "duration_est": "30-60 menit", "is_active": true}
-    ]
-  }
+  "services": [
+    {"id": 1, "division_id": 1, "name": "Lighting / Lampu", "description": "Pemasangan dan penggantian lampu rumah, kantor, dan outdoor.", "base_price": 150000, "price_note": "Harga per titik lampu", "duration_est": "1-2 jam", "is_active": true},
+    {"id": 2, "division_id": 1, "name": "Stopkontak", "description": "Instalasi stopkontak baru atau penggantian stopkontak rusak.", "base_price": 100000, "price_note": "Harga per titik stopkontak", "duration_est": "30-60 menit", "is_active": true},
+    {"id": 3, "division_id": 1, "name": "Kabel Listrik", "description": "Penarikan dan instalasi kabel listrik rumah/kantor.", "base_price": 250000, "price_note": "Harga tergantung panjang kabel", "duration_est": "2-4 jam", "is_active": true},
+    {"id": 4, "division_id": 1, "name": "Servis & Cuci AC", "description": "Pembersihan filter, evaporator, dan kondensor AC semua merek.", "base_price": 175000, "price_note": "Harga per unit AC", "duration_est": "1-2 jam", "is_active": true},
+    {"id": 5, "division_id": 1, "name": "Shower/Kran Rusak", "description": "Perbaikan atau penggantian shower dan kran air yang rusak.", "base_price": 120000, "price_note": "Harga estimasi", "duration_est": "1-2 jam", "is_active": true},
+    {"id": 6, "division_id": 1, "name": "Wastafel Bocor", "description": "Penanganan wastafel yang bocor atau tersumbat.", "base_price": 150000, "price_note": "Harga estimasi", "duration_est": "1-2 jam", "is_active": true},
+    {"id": 7, "division_id": 1, "name": "Pipa Air Bocor", "description": "Perbaikan pipa air bocor, pecah, atau mampet.", "base_price": 200000, "price_note": "Tergantung kondisi", "duration_est": "1-3 jam", "is_active": true},
+    {"id": 8, "division_id": 1, "name": "Closet Rusak", "description": "Perbaikan closet duduk atau jongkok yang rusak atau mampet.", "base_price": 175000, "price_note": "Harga estimasi", "duration_est": "1-2 jam", "is_active": true},
+    {"id": 9, "division_id": 1, "name": "Kabel Data", "description": "Penarikan kabel data dan LAN untuk jaringan rumah/kantor.", "base_price": 200000, "price_note": "Harga per titik", "duration_est": "2-4 jam", "is_active": true},
+    {"id": 10, "division_id": 1, "name": "CCTV", "description": "Pemasangan kamera CCTV dan DVR untuk keamanan.", "base_price": 350000, "price_note": "Harga per kamera", "duration_est": "2-4 jam", "is_active": true},
+    {"id": 11, "division_id": 1, "name": "Pintu Acces", "description": "Pemasangan sistem kunci digital dan akses kontrol pintu.", "base_price": 400000, "price_note": "Harga jasa saja", "duration_est": "2-3 jam", "is_active": true},
+    
+    {"id": 12, "division_id": 2, "name": "Tembok Retak", "description": "Perbaikan retakan pada dinding dengan semen dan cat.", "base_price": 200000, "price_note": "Harga per m²", "duration_est": "2-4 jam", "is_active": true},
+    {"id": 13, "division_id": 2, "name": "Dak Bocor", "description": "Waterproofing dak beton yang bocor.", "base_price": 300000, "price_note": "Harga per m²", "duration_est": "3-5 jam", "is_active": true},
+    {"id": 14, "division_id": 2, "name": "Atap Bocor", "description": "Perbaikan atap genteng atau seng yang bocor.", "base_price": 250000, "price_note": "Harga estimasi", "duration_est": "2-4 jam", "is_active": true},
+    {"id": 15, "division_id": 2, "name": "Kanopi", "description": "Instalasi atau perbaikan kanopi baja ringan dan polycarbonate.", "base_price": 500000, "price_note": "Harga per m²", "duration_est": "4-6 jam", "is_active": true},
+    {"id": 16, "division_id": 2, "name": "Lantai Retak", "description": "Perbaikan keramik atau lantai yang retak atau pecah.", "base_price": 175000, "price_note": "Harga per m²", "duration_est": "2-4 jam", "is_active": true},
+    
+    {"id": 17, "division_id": 3, "name": "Partisi Gypsum", "description": "Pemasangan dinding partisi gypsum.", "base_price": 250000, "price_note": "Harga per m²", "duration_est": "4-8 jam", "is_active": true},
+    {"id": 18, "division_id": 3, "name": "Partisi Kaca", "description": "Pemasangan dinding partisi kaca tempered.", "base_price": 400000, "price_note": "Harga per m²", "duration_est": "4-8 jam", "is_active": true},
+    {"id": 19, "division_id": 3, "name": "Plafon / Ceiling", "description": "Pemasangan plafon gypsum atau PVC.", "base_price": 200000, "price_note": "Harga per m²", "duration_est": "4-8 jam", "is_active": true},
+    {"id": 20, "division_id": 3, "name": "Cat Partisi & Plafon", "description": "Pengecatan ulang partisi gypsum dan plafon.", "base_price": 150000, "price_note": "Harga per m²", "duration_est": "2-4 jam", "is_active": true},
+    {"id": 21, "division_id": 3, "name": "Pintu Rusak", "description": "Perbaikan pintu seret, engsel rusak, atau kusen lapuk.", "base_price": 175000, "price_note": "Harga estimasi", "duration_est": "1-3 jam", "is_active": true},
+    {"id": 22, "division_id": 3, "name": "Lantai Rusak", "description": "Perbaikan lantai rusak atau penggantian keramik.", "base_price": 200000, "price_note": "Harga per m²", "duration_est": "2-4 jam", "is_active": true},
+    
+    {"id": 23, "division_id": 4, "name": "Furniture", "description": "Pengadaan dan pemasangan furnitur custom maupun siap pakai.", "base_price": 500000, "price_note": "Harga jasa saja", "duration_est": "Tergantung item", "is_active": true},
+    {"id": 24, "division_id": 4, "name": "Design", "description": "Konsultasi desain interior dan perencanaan tata letak.", "base_price": 300000, "price_note": "Harga per sesi", "duration_est": "1-2 jam", "is_active": true}
+  ]
+}

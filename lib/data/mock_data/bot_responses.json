@@ -1,16 +1,172 @@
 {
-    "responses": [
-      {"id": 1, "division_id": null, "keyword": "harga", "response": "Harga layanan kami bervariasi tergantung jenis kerusakan. Silakan tunggu admin kami untuk informasi harga yang lebih akurat ya kak! 😊", "sort_order": 1, "is_active": true},
-      {"id": 2, "division_id": null, "keyword": "biaya", "response": "Biaya layanan kami bervariasi tergantung jenis kerusakan. Silakan tunggu admin kami untuk informasi biaya yang lebih akurat ya kak! 😊", "sort_order": 2, "is_active": true},
-      {"id": 3, "division_id": null, "keyword": "berapa", "response": "Untuk informasi harga yang akurat, mohon tunggu admin kami ya kak. Mereka akan membalas sebentar lagi! 🙏", "sort_order": 3, "is_active": true},
-      {"id": 4, "division_id": null, "keyword": "lama", "response": "Estimasi waktu pengerjaan tergantung jenis kerusakan. Admin kami akan memberikan informasi lebih detail. Harap bersabar ya kak! ⏰", "sort_order": 4, "is_active": true},
-      {"id": 5, "division_id": null, "keyword": "estimasi", "response": "Estimasi waktu pengerjaan akan diinfokan oleh admin kami. Mohon tunggu sebentar ya! ⏰", "sort_order": 5, "is_active": true},
-      {"id": 6, "division_id": null, "keyword": "garansi", "response": "Kami memberikan garansi servis untuk setiap pekerjaan. Detail garansi akan dijelaskan oleh admin kami. Tunggu sebentar ya kak! ✅", "sort_order": 6, "is_active": true},
-      {"id": 7, "division_id": null, "keyword": "bisa", "response": "Terima kasih atas pertanyaannya kak! Admin kami akan segera membalas untuk informasi lebih lanjut. Mohon ditunggu ya! 🙏", "sort_order": 7, "is_active": true},
-      {"id": 8, "division_id": null, "keyword": "kapan", "response": "Untuk penjadwalan servis, silakan diskusikan langsung dengan admin kami yang akan segera hadir. Tunggu sebentar ya kak! 📅", "sort_order": 8, "is_active": true},
-      {"id": 9, "division_id": 1, "keyword": "freon", "response": "Tanda AC butuh freon: tidak dingin, keluar angin panas, atau ada bunyi mendesis. Admin kami akan cek kondisi AC Anda lebih lanjut! ❄️", "sort_order": 1, "is_active": true},
-      {"id": 10, "division_id": 1, "keyword": "tidak dingin", "response": "AC tidak dingin bisa disebabkan beberapa hal: freon habis, filter kotor, atau ada kerusakan komponen. Tunggu admin kami ya kak untuk diagnosa lebih lanjut! ❄️", "sort_order": 2, "is_active": true},
-      {"id": 11, "division_id": 2, "keyword": "data", "response": "Kami selalu berusaha menjaga keamanan data pelanggan. Namun untuk keamanan ekstra, kami sarankan backup data dulu sebelum servis ya kak! 📱", "sort_order": 1, "is_active": true},
-      {"id": 12, "division_id": 2, "keyword": "lcd", "response": "Ganti LCD HP kami bisa untuk semua merek populer. Harga tergantung tipe HP. Admin kami akan bantu infokan harga yang tepat! 📱", "sort_order": 2, "is_active": true}
-    ]
-  }
+  "responses": [
+    {
+      "id": 1,
+      "division_id": null,
+      "keyword": "harga",
+      "response": "Harga layanan J-MEP bervariasi tergantung jenis pekerjaan dan kondisi di lapangan. Silakan tunggu admin kami untuk informasi harga yang lebih akurat ya kak! 😊",
+      "sort_order": 1,
+      "is_active": true
+    },
+    {
+      "id": 2,
+      "division_id": null,
+      "keyword": "biaya",
+      "response": "Biaya layanan J-MEP bervariasi sesuai jenis dan kondisi pekerjaan. Admin kami akan segera membalas untuk info biaya yang tepat ya kak! 😊",
+      "sort_order": 2,
+      "is_active": true
+    },
+    {
+      "id": 3,
+      "division_id": null,
+      "keyword": "berapa",
+      "response": "Untuk informasi harga yang akurat, mohon tunggu admin kami ya kak. Mereka akan membalas sebentar lagi! 🙏",
+      "sort_order": 3,
+      "is_active": true
+    },
+    {
+      "id": 4,
+      "division_id": null,
+      "keyword": "lama",
+      "response": "Estimasi waktu pengerjaan tergantung jenis dan kompleksitas pekerjaan. Admin kami akan memberikan informasi lebih detail. Harap bersabar ya kak! ⏰",
+      "sort_order": 4,
+      "is_active": true
+    },
+    {
+      "id": 5,
+      "division_id": null,
+      "keyword": "estimasi",
+      "response": "Estimasi waktu dan biaya pengerjaan akan diinfokan oleh admin kami. Mohon tunggu sebentar ya! ⏰",
+      "sort_order": 5,
+      "is_active": true
+    },
+    {
+      "id": 6,
+      "division_id": null,
+      "keyword": "garansi",
+      "response": "J-MEP memberikan garansi pengerjaan untuk setiap pekerjaan yang kami lakukan. Detail garansi akan dijelaskan oleh admin kami. Tunggu sebentar ya kak! ✅",
+      "sort_order": 6,
+      "is_active": true
+    },
+    {
+      "id": 7,
+      "division_id": null,
+      "keyword": "bisa",
+      "response": "Terima kasih atas pertanyaannya kak! Admin kami akan segera membalas untuk informasi lebih lanjut. Mohon ditunggu ya! 🙏",
+      "sort_order": 7,
+      "is_active": true
+    },
+    {
+      "id": 8,
+      "division_id": null,
+      "keyword": "kapan",
+      "response": "Untuk penjadwalan pekerjaan, silakan diskusikan langsung dengan admin kami yang akan segera hadir. Tunggu sebentar ya kak! 📅",
+      "sort_order": 8,
+      "is_active": true
+    },
+    {
+      "id": 9,
+      "division_id": null,
+      "keyword": "material",
+      "response": "Untuk beberapa layanan, material tidak termasuk dalam harga jasa. Admin kami akan menjelaskan detail material yang dibutuhkan ya kak! 🔧",
+      "sort_order": 9,
+      "is_active": true
+    },
+    {
+      "id": 10,
+      "division_id": 1,
+      "keyword": "bocor",
+      "response": "Pipa atau wastafel bocor perlu ditangani segera agar tidak merusak struktur bangunan. Teknisi kami siap membantu! Admin akan segera hadir ya kak. 🔧",
+      "sort_order": 1,
+      "is_active": true
+    },
+    {
+      "id": 11,
+      "division_id": 1,
+      "keyword": "listrik",
+      "response": "Untuk masalah kelistrikan seperti stopkontak atau kabel, pastikan aman dulu ya kak. Jangan coba-coba sendiri. Admin kami akan segera bantu! ⚡",
+      "sort_order": 2,
+      "is_active": true
+    },
+    {
+      "id": 12,
+      "division_id": 1,
+      "keyword": "ac",
+      "response": "Servis & cuci AC kami untuk semua merek. AC kotor atau tidak dingin bisa disebabkan filter mampet, freon kurang, atau komponen rusak. Admin akan segera cek! ❄️",
+      "sort_order": 3,
+      "is_active": true
+    },
+    {
+      "id": 13,
+      "division_id": 1,
+      "keyword": "cctv",
+      "response": "Instalasi CCTV kami mencakup pemasangan kamera, kabel, DVR, dan setting remote view di smartphone. Admin akan bantu jelaskan detailnya! 📹",
+      "sort_order": 4,
+      "is_active": true
+    },
+    {
+      "id": 14,
+      "division_id": 2,
+      "keyword": "retak",
+      "response": "Retakan pada tembok atau lantai perlu segera diperbaiki sebelum semakin parah. Tim Civil Work J-MEP siap membantu! Admin akan segera hadir ya. 🏠",
+      "sort_order": 1,
+      "is_active": true
+    },
+    {
+      "id": 15,
+      "division_id": 2,
+      "keyword": "atap",
+      "response": "Atap bocor harus ditangani segera sebelum merusak plafon dan struktur di bawahnya. Admin kami akan bantu jadwalkan perbaikan! ☔",
+      "sort_order": 2,
+      "is_active": true
+    },
+    {
+      "id": 16,
+      "division_id": 2,
+      "keyword": "dak",
+      "response": "Dak bocor perlu penanganan waterproofing yang tepat. Tim Civil Work kami berpengalaman dalam perbaikan dak. Admin akan jelaskan lebih lanjut! 💧",
+      "sort_order": 3,
+      "is_active": true
+    },
+    {
+      "id": 17,
+      "division_id": 3,
+      "keyword": "gypsum",
+      "response": "Partisi gypsum kami dikerjakan rapi dan cepat. Cocok untuk ruang kerja, kamar, dan ruang tamu. Admin akan bantu konsultasi kebutuhan Anda! 🏗️",
+      "sort_order": 1,
+      "is_active": true
+    },
+    {
+      "id": 18,
+      "division_id": 3,
+      "keyword": "plafon",
+      "response": "Pemasangan plafon gypsum atau PVC kami tersedia untuk rumah dan kantor. Admin akan infokan harga dan estimasi waktu pengerjaan! 🔨",
+      "sort_order": 2,
+      "is_active": true
+    },
+    {
+      "id": 19,
+      "division_id": 3,
+      "keyword": "partisi",
+      "response": "Kami menyediakan partisi gypsum dan kaca untuk berbagai kebutuhan. Bisa custom sesuai ukuran ruangan. Admin akan bantu hitung kebutuhannya! 📐",
+      "sort_order": 3,
+      "is_active": true
+    },
+    {
+      "id": 20,
+      "division_id": 4,
+      "keyword": "desain",
+      "response": "Tim desainer interior J-MEP siap bantu wujudkan rumah impian Anda. Konsultasi pertama bisa dijadwalkan dengan admin kami. Tunggu sebentar ya! 🎨",
+      "sort_order": 1,
+      "is_active": true
+    },
+    {
+      "id": 21,
+      "division_id": 4,
+      "keyword": "furnitur",
+      "response": "J-MEP menyediakan layanan pengadaan dan pemasangan furnitur custom maupun siap pakai. Admin akan bantu sesuaikan dengan kebutuhan dan budget Anda! 🛋️",
+      "sort_order": 2,
+      "is_active": true
+    }
+  ]
+}

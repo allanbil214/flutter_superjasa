@@ -1,14 +1,14 @@
 class AppConfig {
   // App Information
-  static const String appName = 'JasaFix';
+  static const String appName = 'J-MEP';
   static const String appVersion = '1.0.0';
   static const int appVersionCode = 1;
   
   // Company Information
-  static const String companyName = 'JasaFix Indonesia';
-  static const String supportEmail = 'support@jasafix.id';
+  static const String companyName = 'J-MEP Indonesia';
+  static const String supportEmail = 'support@jmep.id';
   static const String supportPhone = '0812-3456-7890';
-  static const String website = 'https://jasafix.id';
+  static const String website = 'https://jmep.id';
   
   // API Configuration (for later phases)
   static const String apiBaseUrl = 'http://10.0.2.2:8000/api'; // Android emulator localhost

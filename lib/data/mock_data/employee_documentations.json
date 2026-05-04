@@ -1,64 +1,124 @@
 {
-    "documentations": [
-      {
-        "id": 1,
-        "order_id": 1,
-        "employee_id": 9,
-        "title": "Kondisi AC Sebelum Dicuci",
-        "description": "Filter AC sangat kotor, penuh debu dan jamur. Evaporator kotor dan berlendir. Kondensasi kurang optimal.",
-        "stage": "before",
-        "created_at": "2026-04-02T09:20:00+07:00",
-        "media": []
-      },
-      {
-        "id": 2,
-        "order_id": 1,
-        "employee_id": 9,
-        "title": "Proses Cuci AC",
-        "description": "Pembersihan filter menggunakan air bertekanan. Semprot evaporator dengan cairan pembersih khusus AC. Bersihkan kondensor bagian luar.",
-        "stage": "during",
-        "created_at": "2026-04-02T10:00:00+07:00",
-        "media": []
-      },
-      {
-        "id": 3,
-        "order_id": 1,
-        "employee_id": 9,
-        "title": "Hasil Cuci AC",
-        "description": "AC sudah bersih. Filter sudah dipasang kembali. AC dinyalakan dan berjalan normal, dingin kembali. Temperatur turun dari 28°C ke 18°C dalam 10 menit.",
-        "stage": "after",
-        "created_at": "2026-04-02T10:45:00+07:00",
-        "media": []
-      },
-      {
-        "id": 4,
-        "order_id": 8,
-        "employee_id": 10,
-        "title": "Pengecekan Freon AC",
-        "description": "Tekanan freon sangat rendah, hanya 30 PSI (normal 70-80 PSI). Tidak ada kebocoran terlihat secara visual.",
-        "stage": "before",
-        "created_at": "2026-03-21T10:10:00+07:00",
-        "media": []
-      },
-      {
-        "id": 5,
-        "order_id": 8,
-        "employee_id": 10,
-        "title": "Pengisian Freon R32",
-        "description": "Isi freon R32 sebanyak 600 gram. Tekanan naik ke 75 PSI. AC sudah mulai dingin kembali.",
-        "stage": "during",
-        "created_at": "2026-03-21T10:45:00+07:00",
-        "media": []
-      },
-      {
-        "id": 6,
-        "order_id": 8,
-        "employee_id": 10,
-        "title": "Selesai Isi Freon",
-        "description": "Freon sudah terisi penuh. AC berjalan normal dan dingin. Suhu turun signifikan. Customer puas.",
-        "stage": "after",
-        "created_at": "2026-03-21T11:20:00+07:00",
-        "media": []
-      }
-    ]
-  }
+  "documentations": [
+    {
+      "id": 1,
+      "order_id": 1,
+      "employee_id": 7,
+      "title": "Kondisi AC Sebelum Dicuci",
+      "description": "Filter AC sangat kotor, penuh debu dan jamur. Evaporator kotor dan berlendir. Kondensasi tidak optimal, suhu ruangan tidak turun dengan baik.",
+      "stage": "before",
+      "created_at": "2026-04-02T09:15:00+07:00",
+      "media": []
+    },
+    {
+      "id": 2,
+      "order_id": 1,
+      "employee_id": 7,
+      "title": "Proses Cuci AC",
+      "description": "Filter dibersihkan dengan air bertekanan. Evaporator disemprot cairan pembersih khusus AC. Kondensor bagian luar dibersihkan dari kotoran dan debu.",
+      "stage": "during",
+      "created_at": "2026-04-02T09:50:00+07:00",
+      "media": []
+    },
+    {
+      "id": 3,
+      "order_id": 1,
+      "employee_id": 7,
+      "title": "Hasil Cuci AC",
+      "description": "AC sudah bersih dan berfungsi optimal. Suhu ruangan turun dari 30°C ke 19°C dalam 10 menit. Customer puas dengan hasilnya.",
+      "stage": "after",
+      "created_at": "2026-04-02T10:45:00+07:00",
+      "media": []
+    },
+    {
+      "id": 4,
+      "order_id": 2,
+      "employee_id": 8,
+      "title": "Pengecekan Lokasi Pemasangan CCTV",
+      "description": "Survey dua titik pemasangan kamera: depan pintu utama dan area parkir belakang. Panjang kabel total sekitar 30 meter. Posisi strategis untuk coverage maksimal.",
+      "stage": "before",
+      "created_at": "2026-04-06T10:10:00+07:00",
+      "media": []
+    },
+    {
+      "id": 5,
+      "order_id": 2,
+      "employee_id": 8,
+      "title": "Proses Instalasi Kamera CCTV",
+      "description": "Penarikan kabel koaksial dari DVR ke dua titik kamera. Pemasangan bracket dan kamera. Konfigurasi DVR dan koneksi ke jaringan lokal.",
+      "stage": "during",
+      "created_at": "2026-04-06T11:30:00+07:00",
+      "media": []
+    },
+    {
+      "id": 6,
+      "order_id": 2,
+      "employee_id": 8,
+      "title": "CCTV Terpasang dan Aktif",
+      "description": "Kedua kamera sudah aktif dan terhubung ke DVR. Setting remote view via smartphone sudah berhasil. Gambar jernih dan sudut pandang optimal.",
+      "stage": "after",
+      "created_at": "2026-04-06T13:45:00+07:00",
+      "media": []
+    },
+    {
+      "id": 7,
+      "order_id": 4,
+      "employee_id": 10,
+      "title": "Kondisi Tembok Sebelum Diperbaiki",
+      "description": "Retakan di tembok kamar tidur sepanjang sekitar 1,5 meter dengan lebar retakan 2-5mm. Ada 2 titik retakan yang perlu penanganan.",
+      "stage": "before",
+      "created_at": "2026-04-13T10:15:00+07:00",
+      "media": []
+    },
+    {
+      "id": 8,
+      "order_id": 4,
+      "employee_id": 10,
+      "title": "Proses Perbaikan Tembok",
+      "description": "Retakan dibersihkan dan diperluas sedikit untuk isian yang lebih kuat. Diisi dengan campuran semen khusus. Dihaluskan dengan acian dan diamplas.",
+      "stage": "during",
+      "created_at": "2026-04-13T11:30:00+07:00",
+      "media": []
+    },
+    {
+      "id": 9,
+      "order_id": 4,
+      "employee_id": 10,
+      "title": "Hasil Perbaikan Tembok",
+      "description": "Retakan sudah tertutup rata dan dicat ulang sesuai warna dinding. Permukaan halus dan tidak terlihat bekas retakan. Customer sangat puas.",
+      "stage": "after",
+      "created_at": "2026-04-13T13:45:00+07:00",
+      "media": []
+    },
+    {
+      "id": 10,
+      "order_id": 7,
+      "employee_id": 11,
+      "title": "Kondisi Dak Sebelum Perbaikan",
+      "description": "Dak beton mengalami kebocoran di 2 titik. Ada retakan halus di permukaan beton dan bekas rembesan air di plafon ruang tamu. Perlu waterproofing.",
+      "stage": "before",
+      "created_at": "2026-04-09T09:15:00+07:00",
+      "media": []
+    },
+    {
+      "id": 11,
+      "order_id": 7,
+      "employee_id": 11,
+      "title": "Proses Waterproofing Dak",
+      "description": "Permukaan dak dibersihkan dari lumut dan kotoran. Retakan ditambal dengan semen instan. Lapisan waterproofing diaplikasikan 2 lapis untuk hasil maksimal.",
+      "stage": "during",
+      "created_at": "2026-04-09T10:30:00+07:00",
+      "media": []
+    },
+    {
+      "id": 12,
+      "order_id": 7,
+      "employee_id": 11,
+      "title": "Dak Selesai Diperbaiki",
+      "description": "Waterproofing sudah diaplikasikan dan mengering. Semua titik bocor sudah tertutup rapat. Garansi 6 bulan untuk hasil perbaikan.",
+      "stage": "after",
+      "created_at": "2026-04-09T12:45:00+07:00",
+      "media": []
+    }
+  ]
+}
